@@ -1,0 +1,45 @@
+{
+  "name": "client1.0",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
+    "crypto-js": "^4.0.0",
+    "crypto-random-string": "^3.2.0",
+    "file-saver": "^2.0.2",
+    "ipfs-http-client": "^40.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-indiana-drag-scroll": "^1.6.1",
+    "react-qr-reader": "^2.2.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "uint-js": "0.0.4",
+    "web3": "^1.2.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
