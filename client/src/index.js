@@ -213,8 +213,7 @@ class application extends React.Component {
                 </button>
              
             </div>
-            <div className="col-md-4">
-              
+            <div className="col-md-12 my-5 text-center" style={{marginLeft:'300px !important'}}>              
                 <button type="button" className="btn btn-success" onClick={()=>this.loginRecep()}> 
                   RECEPTIONIST
                 </button>
