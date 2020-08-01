@@ -5,7 +5,7 @@ import { Switch } from "react-router";
 import "./style.css";
 import logo from "./Logo.png";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import loginDoctor from "./components/loginDoctor.js";
+//import loginDoctor from "./components/loginDoctor.js";
 import addPatient from "./components/addPatient.js";
 import addReception from "./components/addReception.js";
 import addLab from "./components/addLab.js";
@@ -13,10 +13,10 @@ import addDoctor from "./components/addDoctor.js";
 import Admin from "./components/Admin.js";
 import superAdmin from "./components/superAdmin.js";
 import stateAdmin from "./components/addStateAdmin.js";
-import loginTechnician from "./components/loginTechnician.js";
-import revoke from "./components/revoke.js";
-import permit from "./components/permit.js";
-import loginPatient from "./components/loginPatient.js";
+//import loginTechnician from "./components/loginTechnician.js";
+// import revoke from "./components/revoke.js";
+// import permit from "./components/permit.js";
+//import loginPatient from "./components/loginPatient.js";
 import Web3 from 'web3';
 import {Healthcare} from "./components/js/Healthcare.js"
 
@@ -262,11 +262,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={application} />
-      <Route exact path="/doctor" component={loginDoctor} />
-      <Route exact path="/patient" component={loginPatient} />
-      <Route exact path="/revoke" component={revoke} />
-      <Route exact path="/permit" component={permit} />
-      <Route exact path="/technician" component={loginTechnician} />
+     
+      
       <Route exact path="/superadmin" component={superAdmin} />
       <Route exact path="/stateadmin" component={stateAdmin} />
       <Route exact path="/admin" component={Admin} />
