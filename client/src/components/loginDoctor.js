@@ -77,7 +77,7 @@ class loginDoctor extends React.Component {
       pdata.push(temp);
     }
     this.setState({ pdata: pdata });
-
+ console.log(pdata);
 
 
   }
@@ -87,6 +87,7 @@ class loginDoctor extends React.Component {
     super(props);
     this.state = {
       data: [],
+      pdata:[],
       web3: null,
       contract: null,
       account: null,
