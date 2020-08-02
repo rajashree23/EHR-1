@@ -61,6 +61,18 @@ class loginTechnician extends React.Component {
     this.setState({ data: data });
 
 
+    var pdata = [];
+    const plen = await this.state.contract.methods.recordPLabCount().call({ from: fromAcc });
+    for (var i = plen - 1; i >= 0; i--) {
+      const details = await this.state.contract.methods.recordPLabDetails(i).call({ from: fromAcc });
+      var temp = {};
+      const patName = await this.state.contract.methods.returnPatName(details[1]).call({ from: fromAcc });
+      temp = { "ipfsLink": details[0], "patientAddress": details[1], "patientName": patName }
+      pdata.push(temp);
+    }
+    this.setState({ pdata: pdata });
+
+
 
   }
 
@@ -68,6 +80,7 @@ class loginTechnician extends React.Component {
     super(props);
     this.state = {
       data: [],
+      pdata:[],
       web3: null,
       contract: null,
       account: null,
@@ -184,6 +197,30 @@ class loginTechnician extends React.Component {
                       <td>{x.patientAddress}</td>
                       <td>{x.timestamp}</td>
                       <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} onClick={() => this.downloadFile(x.ipfsLink)} target='_blank'>{x.ipfsLink}</a></td>
+                    </tr>)}
+                </tbody>
+              </table>
+            </div>
+            <br>
+            </br>
+            <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Patient Address</th>
+                   
+                    <th>IPFS link </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {this.state.pdata.map(x =>
+                    <tr>
+                      <td>{x.patientName}</td>
+                      <td>{x.patientAddress}</td>
+                      
+                      <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} onClick={()=>this.downloadFile(x.ipfsLink)}target='_blank'>{x.ipfsLink}</a></td>
                     </tr>)}
                 </tbody>
               </table>

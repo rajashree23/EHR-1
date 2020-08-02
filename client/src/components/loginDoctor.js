@@ -61,8 +61,22 @@ class loginDoctor extends React.Component {
       temp = { "ipfsLink": details[0], "timestamp": details[1], "patientAddress": details[2], "patientName": patName }
       data.push(temp);
     }
+    console.log(data);
+   
+
   }
     this.setState({ data: data });
+
+    var pdata = [];
+    const plen = await this.state.contract.methods.recordPDocCount().call({ from: fromAcc });
+    for (var i = plen - 1; i >= 0; i--) {
+      const details = await this.state.contract.methods.recordPDocDetails(i).call({ from: fromAcc });
+      var temp = {};
+      const patName = await this.state.contract.methods.returnPatName(details[1]).call({ from: fromAcc });
+      temp = { "ipfsLink": details[0], "patientAddress": details[1], "patientName": patName }
+      pdata.push(temp);
+    }
+    this.setState({ pdata: pdata });
 
 
 
@@ -186,6 +200,31 @@ class loginDoctor extends React.Component {
                 </tbody>
               </table>
             </div>
+            <br>
+            </br>
+            <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Patient Address</th>
+                   
+                    <th>IPFS link </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {this.state.pdata.map(x =>
+                    <tr>
+                      <td>{x.patientName}</td>
+                      <td>{x.patientAddress}</td>
+                      
+                      <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} onClick={()=>this.downloadFile(x.ipfsLink)}target='_blank'>{x.ipfsLink}</a></td>
+                    </tr>)}
+                </tbody>
+              </table>
+            </div>
+
           </div>
         </div></div>
     );

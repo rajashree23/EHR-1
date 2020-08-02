@@ -55,7 +55,7 @@ class loginPatient extends React.Component {
         console.log(name);
       }
       else{
-        name = await this.state.contract.methods.returnDocName(details[3]).call({ from: this.state.account });
+        name = await this.state.contract.methods.returnLabName(details[3]).call({ from: this.state.account });
         console.log(name)
       }
         temp = {
