@@ -175,7 +175,7 @@ class application extends React.Component {
             </div>
             <div className="col-md-4">
               
-                <button id="patient" type="button" className="btn btn-success" onClick={()=>this.loginPat()}>
+                <button type="button" className="btn btn-success" id="patient" onClick={()=>this.loginPat()}>
                   PATIENT
                 </button>
              

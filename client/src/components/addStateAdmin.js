@@ -42,7 +42,7 @@ class stateAdmin extends React.Component {
 
     //calling smart contract
 
-    const details = await this.state.contract.methods.hospitalAdminForState().call({ from: fromAcc });
+    const details = await this.state.contract.methods.hosAdminForState().call({ from: fromAcc });
 
     this.setState({ details: details });
 
