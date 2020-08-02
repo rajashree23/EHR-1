@@ -181,8 +181,9 @@ class loginDoctor extends React.Component {
                 </div>
               </div>
             </div>
-
+         
             <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
+            <h3>You uploaded these...</h3>
               <table class="table">
                 <thead class="thead-dark">
                   <tr>
@@ -206,7 +207,9 @@ class loginDoctor extends React.Component {
             </div>
             <br>
             </br>
+            
             <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
+            <h3>You can view these...</h3>
               <table class="table">
                 <thead class="thead-dark">
                   <tr>
