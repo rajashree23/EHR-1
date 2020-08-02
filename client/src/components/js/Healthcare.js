@@ -1,10 +1,5 @@
 export const Healthcare=[
 	{
-		"inputs": [],
-		"stateMutability": "nonpayable",
-		"type": "constructor"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "address",
@@ -144,6 +139,57 @@ export const Healthcare=[
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "removePermission",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "patientAdd",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "aeskey",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "time",
+				"type": "string"
+			}
+		],
+		"name": "sendIPFS",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
 	},
 	{
 		"inputs": [
@@ -450,21 +496,77 @@ export const Healthcare=[
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "recordPDocCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
+				"internalType": "uint256",
+				"name": "z",
+				"type": "uint256"
+			}
+		],
+		"name": "recordPDocDetails",
+		"outputs": [
+			{
 				"internalType": "string",
-				"name": "hash",
+				"name": "",
 				"type": "string"
 			},
 			{
 				"internalType": "address",
-				"name": "user",
+				"name": "",
 				"type": "address"
 			}
 		],
-		"name": "removePermission",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "recordPLabCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "z",
+				"type": "uint256"
+			}
+		],
+		"name": "recordPLabDetails",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -541,34 +643,6 @@ export const Healthcare=[
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "hash",
-				"type": "string"
-			},
-			{
-				"internalType": "address",
-				"name": "patientAdd",
-				"type": "address"
-			},
-			{
-				"internalType": "string",
-				"name": "aeskey",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "time",
-				"type": "string"
-			}
-		],
-		"name": "sendIPFS",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

@@ -50,7 +50,7 @@ class application extends React.Component {
     //const networkId = await web3.eth.net.getId()
     //const networkData = Healthcare.networks[networkId]
    
-      const contract = new web3.eth.Contract(Healthcare, "0x1c270d26a933a52a7171421407061eed769a08ba")
+      const contract = new web3.eth.Contract(Healthcare, "0xd62f4bb9ad5dbea866f31ce2b007f23520ca675c")
       this.setState({ contract })
      
 

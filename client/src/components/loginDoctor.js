@@ -42,7 +42,7 @@ class loginDoctor extends React.Component {
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
    
-      const contract = new web3.eth.Contract(Healthcare, "0x1c270d26a933a52a7171421407061eed769a08ba");
+      const contract = new web3.eth.Contract(Healthcare, "0xd62f4bb9ad5dbea866f31ce2b007f23520ca675c");
       this.setState({ contract })
 
     
@@ -61,9 +61,26 @@ class loginDoctor extends React.Component {
       temp = { "ipfsLink": details[0], "timestamp": details[1], "patientAddress": details[2], "patientName": patName }
       data.push(temp);
     }
+    console.log(data);
+   
+
   }
     this.setState({ data: data });
 
+    var pdata = [];
+    const plen = await this.state.contract.methods.recordPDocCount().call({ from: fromAcc });
+    for (var i = plen - 1; i >= 0; i--) {
+      const details = await this.state.contract.methods.recordPDocDetails(i).call({ from: fromAcc });
+      const isPermit=await this.state.contract.methods.retrieveKey(details[0]).call({ from: fromAcc });
+      if(isPermit != ""){
+      var temp = {};
+      const patName = await this.state.contract.methods.returnPatName(details[1]).call({ from: fromAcc });
+      temp = { "ipfsLink": details[0], "patientAddress": details[1], "patientName": patName }
+      pdata.push(temp);
+      }
+    }
+    this.setState({ pdata: pdata });
+ console.log(pdata);
 
 
   }
@@ -73,6 +90,7 @@ class loginDoctor extends React.Component {
     super(props);
     this.state = {
       data: [],
+      pdata:[],
       web3: null,
       contract: null,
       account: null,
@@ -186,6 +204,31 @@ class loginDoctor extends React.Component {
                 </tbody>
               </table>
             </div>
+            <br>
+            </br>
+            <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Patient Name</th>
+                    <th>Patient Address</th>
+                   
+                    <th>IPFS link </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {this.state.pdata.map(x =>
+                    <tr>
+                      <td>{x.patientName}</td>
+                      <td>{x.patientAddress}</td>
+                      
+                      <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} onClick={()=>this.downloadFile(x.ipfsLink)}target='_blank'>{x.ipfsLink}</a></td>
+                    </tr>)}
+                </tbody>
+              </table>
+            </div>
+
           </div>
         </div></div>
     );
