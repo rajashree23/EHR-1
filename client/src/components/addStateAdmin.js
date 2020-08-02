@@ -108,8 +108,8 @@ class stateAdmin extends React.Component {
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th>Admin Name</th>
                 <th>Admin Address</th>
+                <th>Admin Name</th>
                 <th>Hospital Name</th>
 
               </tr>
