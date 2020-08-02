@@ -209,7 +209,7 @@ class application extends React.Component {
           </div>
           <div
             className="row text-center my-5 "
-            style={{ paddingBottom: "10%" }}
+            style={{ paddingBottom: "1%" }}
           >
             <div className="col-md-12 my-5 text-center" style={{marginLeft:'300px !important'}}>              
                 <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginRecep()}> 
