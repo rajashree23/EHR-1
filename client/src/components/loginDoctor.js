@@ -128,8 +128,9 @@ class loginDoctor extends React.Component {
           const content = uintToString(file.content);
          
           const decryptedfile = decryptFile(content, decryptedKey);
-          document.getElementById('modalReport').innerHTML = decryptedFile
-          $('#exampleModalLong').modal()
+          // document.getElementById('modalReport').innerHTML = decryptedFile
+          // $('#exampleModalLong').modal()
+          alert(decryptedfile);
           
           // var blob = new Blob([decryptedfile], { type: "text/plain;charset=utf-8" });
           // FileSaver.saveAs(blob, "doc.txt"); 
