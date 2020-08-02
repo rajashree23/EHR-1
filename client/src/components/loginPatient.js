@@ -36,7 +36,7 @@ class loginPatient extends React.Component {
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
    
-      const contract = new web3.eth.Contract(Healthcare, "0x1c270d26a933a52a7171421407061eed769a08ba")
+      const contract = new web3.eth.Contract(Healthcare, "0xd62f4bb9ad5dbea866f31ce2b007f23520ca675c")
       this.setState({ contract })
 
     const len = await this.state.contract.methods.recordPatCount().call({ from: this.state.account });
