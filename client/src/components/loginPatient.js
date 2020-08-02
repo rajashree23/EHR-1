@@ -172,7 +172,7 @@ class loginPatient extends React.Component {
             </li>
           </ul>
         </nav>
-        <div className="container">
+        <div className="container-fluid" style={{padding:'25px !important'}}>
           <br />
           <br />
           <table class="table">
