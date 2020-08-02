@@ -209,3 +209,24 @@ input[type=text]:placeholder {
   outline: none;
 }
 
+.navbar, .footer-clean {
+  background: #2FC352;
+  background: -webkit-linear-gradient(left, #2FC352, #35A3C4);
+  background: -moz-linear-gradient(left, #2FC352, #35A3C4);
+  background: linear-gradient(to right, #2FC352, #35A3C4);
+}
+
+.hover-effect {
+  width: 220px;
+}
+.hover-effect:hover{
+  width: 260px;
+  transition: width 1s;
+}
+
+.Header {
+  background-image: url(./imageedit.png);
+  background-size: cover;
+  color: #ffffff;
+  height: 750px;
+}
