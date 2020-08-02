@@ -128,9 +128,11 @@ class loginDoctor extends React.Component {
           const content = uintToString(file.content);
          
           const decryptedfile = decryptFile(content, decryptedKey);
-          alert(decryptedfile)
+          document.getElementById('modalReport').innerHTML = decryptedFile
+          $('#exampleModalLong').modal()
+          
           // var blob = new Blob([decryptedfile], { type: "text/plain;charset=utf-8" });
-          // FileSaver.saveAs(blob, "doc.txt");
+          // FileSaver.saveAs(blob, "doc.txt"); 
 
         })
       })
@@ -201,14 +203,34 @@ class loginDoctor extends React.Component {
                       <td>{x.patientName}</td>
                       <td>{x.patientAddress}</td>
                       <td>{x.timestamp}</td>
-                      <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} onClick={()=>this.downloadFile(x.ipfsLink)}target='_blank'>{x.ipfsLink}</a></td>
+                      <td><a href={"https://ipfs.infura.io/ipfs/" + x.ipfsLink} className="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" onClick={()=>this.downloadFile(x.ipfsLink)}>{x.ipfsLink}</a></td>
                     </tr>)}
                 </tbody>
               </table>
             </div>
             <br>
             </br>
-            
+
+  
+          <div className="modal fade" id="exampleModalLong" tabIndex={-1} role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                  <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div className="modal-body-report" id="modalReport">
+                  <span id="reportContent">...</span>
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-success" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+                
             <div className="col-md-12 ml-auto mr-5 my-5 wrapper">
             <h3>You can view these...</h3>
             <hr/>
