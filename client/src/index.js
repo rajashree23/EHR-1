@@ -147,16 +147,35 @@ class application extends React.Component {
                     HOME
                   </a>
                 </Link>
+                <Link to="/">
+                  <a className="nav-link" style={{ color: "white" }}>
+                    ABOUT 
+                  </a>
+                </Link>
+                <Link to="/">
+                  <a className="nav-link" style={{ color: "white" }}>
+                    CONTACT
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>
-          <div>
-            <header className="text-center" style={{ padding: "5%" }}>
-              <h1 className="text-success">ELECTRONIC HEALTH RECORD</h1>
-              <h4>A blockchain based decentralised healthcare application</h4>
+          <div className='Header'>
+            <br />
+            <br />
+            <br />
+            <br /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <header className="text-center" >
+              <h1 >ELECTRONIC HEALTH RECORD</h1>
+              <h4>A blockchain based decentralised healthcare application.</h4>
             </header>
             <br />
-            <hr className="line" />
+            <br />
             <br />
             <br />
             <br />
@@ -168,21 +187,21 @@ class application extends React.Component {
 
             <div className="col-md-4">
               
-                <button type="button" className="btn btn-success" onClick={()=>this.loginDoc()}>
+                <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginDoc()}>
                   DOCTOR
                 </button>
              
             </div>
             <div className="col-md-4">
               
-                <button type="button" className="btn btn-success" id="patient" onClick={()=>this.loginPat()}>
+                <button id="patient" type="button" className="btn btn-success hover-effect" onClick={()=>this.loginPat()}>
                   PATIENT
                 </button>
              
             </div>
             <div className="col-md-4">
               
-                <button type="button" className="btn btn-success" onClick={()=>this.loginLab()}>
+                <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginLab()}>
                   LAB TECHNICIAN
                 </button>
               
@@ -192,34 +211,40 @@ class application extends React.Component {
             className="row text-center my-5 "
             style={{ paddingBottom: "10%" }}
           >
+            <div className="col-md-12 my-5 text-center" style={{marginLeft:'300px !important'}}>              
+                <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginRecep()}> 
+                  RECEPTIONIST
+                </button>
+             
+            </div>
+          </div>
+
+          <div
+            className="row text-center my-5 "
+            style={{ paddingBottom: "10%" }}
+          >
             <div className="col-md-4">
              
-                <button type="button" className="btn btn-success" onClick={()=>this.loginSuper()}>
+                <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginSuper()}>
                   SUPERADMIN
                 </button>
              
             </div>
             <div className="col-md-4">
              
-             <button type="button" className="btn btn-success" onClick={()=>this.loginState()}>
+             <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginState()}>
                STATEADMIN
              </button>
           
          </div>
             <div className="col-md-4">
               
-                <button type="button" className="btn btn-success" onClick={()=>this.loginAdmin()}>
+                <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginAdmin()}>
                   ADMIN
                 </button>
              
             </div>
-            <div className="col-md-4">
-              
-                <button type="button" className="btn btn-success" onClick={()=>this.loginRecep()}> 
-                  RECEPTIONIST
-                </button>
-             
-            </div>
+
           </div>
         </div>
         <div
