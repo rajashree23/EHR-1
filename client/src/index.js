@@ -240,7 +240,7 @@ class application extends React.Component {
             <div className="col-md-4">
               
                 <button type="button" className="btn btn-success hover-effect" onClick={()=>this.loginAdmin()}>
-                  ADMIN
+                  HOSPITAL ADMIN
                 </button>
              
             </div>
