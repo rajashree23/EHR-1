@@ -131,7 +131,7 @@ class application extends React.Component {
   }
   render() {
     return (
-      <div className="App">
+      <div id ='patient' className="App">
         <div className="bg-light text-dark">
           <nav className="navbar navbar-expand-sm bg-dark navbar-light">
             <div
@@ -194,7 +194,7 @@ class application extends React.Component {
             </div>
             <div className="col-md-4">
               
-                <button id="patient" type="button" className="btn btn-success hover-effect" onClick={()=>this.loginPat()}>
+                <button  type="button" className="btn btn-success hover-effect" onClick={()=>this.loginPat()}>
                   PATIENT
                 </button>
              
