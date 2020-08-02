@@ -122,9 +122,9 @@ class loginTechnician extends React.Component {
           const content = uintToString(file.content);
           
           const decryptedfile = decryptFile(content, decryptedKey);
-          
-          var blob = new Blob([decryptedfile], { type: "text/plain;charset=utf-8" });
-          FileSaver.saveAs(blob, "doc.txt");
+          alert(decryptedfile)
+          // var blob = new Blob([decryptedfile], { type: "text/plain;charset=utf-8" });
+          // FileSaver.saveAs(blob, "doc.txt");
 
         })
       })
