@@ -54,11 +54,14 @@ class loginDoctor extends React.Component {
     const len = await this.state.contract.methods.recordDocCount().call({ from: fromAcc });
     for (var i = len - 1; i >= 0; i--) {
       const details = await this.state.contract.methods.recordDocDetails(i).call({ from: fromAcc });
+      const isPermit=await this.state.contract.methods.retrieveKey(details[0]).call({ from: fromAcc });
+      if(isPermit != ""){
       var temp = {};
       const patName = await this.state.contract.methods.returnPatName(details[2]).call({ from: fromAcc });
       temp = { "ipfsLink": details[0], "timestamp": details[1], "patientAddress": details[2], "patientName": patName }
       data.push(temp);
     }
+  }
     this.setState({ data: data });
 
 
