@@ -68,7 +68,7 @@ class loginPatient extends React.Component {
       data.push(temp);
     }
     this.setState({ data: data });
-
+ console.log(data);
   }
   constructor(props) {
     super(props)
@@ -139,7 +139,7 @@ class loginPatient extends React.Component {
             pathname: '/permit',
             state: {recRevoke: x.record}
           }}>
-            <button
+            <button id='permit'
               type="button"
               class="btn btn-success btn-sm"
               data-toggle="modal"

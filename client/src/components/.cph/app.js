@@ -4,8 +4,8 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import QR from "./qr";
 import Web3 from 'web3';
 import { Healthcare } from "../js/Healthcare.js"
-
-
+import { encryptKey, encryptFile, decryptKey } from "../js/encryption.js";
+import ipfs from '../js/ipfs'
 const cryptoRandomString = require('crypto-random-string');
 
 // import {generate} from "..js/aeskey.js"
@@ -110,11 +110,72 @@ class Employee extends Component {
 
 
   //doc and lab upload record
- 
+  async reportUpload() {
+    var today = new Date();
+    var date = today.getDate() + "-" + parseInt(today.getMonth() + 1) + "-" + today.getFullYear();
+
+    const aeskey = cryptoRandomString({ length: 32 });
+    console.log('aes key', aeskey);
+
+    const encryptedfile = encryptFile(this.props.data.toString(), aeskey);
+    console.log('encrypted file', encryptedfile);
+
+    const encryptedKey = encryptKey(this.state.value, aeskey);
+    console.log('Encrypted key', encryptedKey);
+
+    const buffer1 = Buffer.from(encryptedfile.toString());
+    ipfs.add(buffer1, (error, result) => {
+      console.log('ipfs results', result[0].hash);
+      this.state.contract.methods.sendIPFS(result[0].hash, this.state.value, encryptedKey, date).send({ from: this.state.account }).then((r) => {
+        console.log("Added report");
+        window.alert('You have added report successfully')
+        return window.location.reload();
+
+      })
+      if (error)
+        console.log(error);
+    })
+
+
+  }
+
+  //revoke
+  async revoke() {
+    const isPermit = await this.state.contract.methods.permitOrNot(this.props.data, this.state.value).call({ from: this.state.account });
+    if (isPermit === "") {
+      window.alert('You have not given any permission to this user')
+    }
+    else {
+      this.state.contract.methods.removePermission(this.props.data, this.state.value).send({ from: this.state.account }).then((r) => {
+        console.log("Revoked");
+        window.alert('Permission revoked successfully')
+      })
+    }
+  }
 
 
   //permit
-  
+  async permit() {
+
+    const encryptedKey = await this.state.contract.methods.retrieveKey(this.props.data).call({ from: this.state.account });
+
+    const isPermit = await this.state.contract.methods.permitOrNot(this.props.data, this.state.value).call({ from: this.state.account });
+    if (isPermit === "") {
+      const decryptedKey = decryptKey(encryptedKey, this.state.account);
+
+      const newEncryptKey = encryptKey(this.state.value, decryptedKey);
+
+      this.state.contract.methods.createPermission(this.props.data, newEncryptKey, this.state.value).send({ from: this.state.account }).then((r) => {
+        console.log("Permitted");
+        window.alert('Permission given successfully')
+      })
+    }
+    else {
+      window.alert('You have already given permission to this user')
+
+    }
+
+  }
   getValueFromChild(value) {
     console.log(value);
     this.setState({
@@ -126,6 +187,7 @@ class Employee extends Component {
     return (
       <>
         <input
+        id="input"
           className="form-control"
           value={this.state.value}
           onChange={(e) => {
@@ -153,7 +215,47 @@ class Employee extends Component {
           {this.state.cam ? <QR gettingValues={this.getValueFromChild.bind(this)} /> : "Click on button to read Qr data"}{" "}
         </p>
 
+        {this.props.from === "doc" && <button type='submit'
+          onClick={() => {
+            this.setState({ parab: !this.state.parab });
+            this.reportUpload()
 
+          }}
+          className="btn btn-success my-2"
+        >
+          Submit
+        </button>}
+        {this.props.from === "lab" && <button type='submit'
+          onClick={() => {
+            this.setState({ parab: !this.state.parab });
+            this.reportUpload()
+
+          }}
+          className="btn btn-success my-2"
+        >
+          Submit
+        </button>}
+
+        {this.props.from === "revoke" && <button type='submit'
+          onClick={() => {
+            this.setState({ parab: !this.state.parab });
+            this.revoke()
+
+          }}
+          className="btn btn-success my-2"
+        >
+          Submit
+        </button>}
+        {this.props.from === "permit" && <button id ='permitsubmit' type='submit'
+          onClick={() => {
+            this.setState({ parab: !this.state.parab });
+            this.permit()
+
+          }}
+          className="btn btn-success my-2"
+        >
+          Submit
+        </button>}
         {this.props.from === "recepPat" && <button type='submit'
           onClick={() => {
             this.setState({ parab: !this.state.parab });
