@@ -33,7 +33,7 @@ class stateAdmin extends React.Component {
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
 
-    const contract = new web3.eth.Contract(Healthcare, "0xd62f4bb9ad5dbea866f31ce2b007f23520ca675c");
+    const contract = new web3.eth.Contract(Healthcare, "0x0baa16ddde410d64069ffb772898ee2e3ccffa64");
     this.setState({ contract })
 
 
@@ -108,8 +108,8 @@ class stateAdmin extends React.Component {
           <table class="table">
             <thead class="thead-dark">
               <tr>
-                <th>Admin Name</th>
                 <th>Admin Address</th>
+                <th>Admin Name</th>
                 <th>Hospital Name</th>
 
               </tr>
