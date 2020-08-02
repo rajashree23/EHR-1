@@ -14,8 +14,8 @@ import Admin from "./components/Admin.js";
 import superAdmin from "./components/superAdmin.js";
 import stateAdmin from "./components/addStateAdmin.js";
 import loginTechnician from "./components/loginTechnician.js";
-// import revoke from "./components/revoke.js";
-// import permit from "./components/permit.js";
+ import revoke from "./components/revoke.js";
+ import permit from "./components/permit.js";
 import loginPatient from "./components/loginPatient.js";
 import Web3 from 'web3';
 import {Healthcare} from "./components/js/Healthcare.js"
@@ -290,7 +290,8 @@ ReactDOM.render(
      
       <Route exact path="/doctor" component={loginDoctor} />
       <Route exact path="/patient" component={loginPatient} />
-    
+      <Route exact path="/revoke" component={revoke} />
+      <Route exact path="/permit" component={permit} />
       <Route exact path="/technician" component={loginTechnician} />
       <Route exact path="/superadmin" component={superAdmin} />
       <Route exact path="/stateadmin" component={stateAdmin} />
