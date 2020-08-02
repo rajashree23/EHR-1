@@ -129,6 +129,11 @@ class application extends React.Component {
     else
      alert('You are not a registered receptionist in this platform');
   }
+  redirect = () => {
+    window.location.href = 'http://localhost:5000/hss';
+    // maybe can add spinner while loading
+    return null;
+  }
   render() {
     return (
       <div id ='patient' className="App">
@@ -157,6 +162,10 @@ class application extends React.Component {
                     CONTACT
                   </a>
                 </Link>
+                
+                <a className="nav-link" style={{ color: "white" }} href='http://localhost:5000/hss'>
+                    DEMO 
+                  </a>
               </li>
             </ul>
           </nav>
