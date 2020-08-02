@@ -147,16 +147,35 @@ class application extends React.Component {
                     HOME
                   </a>
                 </Link>
+                <Link to="/">
+                  <a className="nav-link" style={{ color: "white" }}>
+                    ABOUT 
+                  </a>
+                </Link>
+                <Link to="/">
+                  <a className="nav-link" style={{ color: "white" }}>
+                    CONTACT
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>
-          <div>
-            <header className="text-center" style={{ padding: "5%" }}>
-              <h1 className="text-success">ELECTRONIC HEALTH RECORD</h1>
-              <h4>A blockchain based decentralised healthcare application</h4>
+          <div className='Header'>
+            <br />
+            <br />
+            <br />
+            <br /><br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <header className="text-center" >
+              <h1 >ELECTRONIC HEALTH RECORD</h1>
+              <h4>A blockchain based decentralised healthcare application.</h4>
             </header>
             <br />
-            <hr className="line" />
+            <br />
             <br />
             <br />
             <br />
