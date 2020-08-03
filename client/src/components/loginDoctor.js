@@ -61,11 +61,12 @@ class loginDoctor extends React.Component {
       temp = { "ipfsLink": details[0], "timestamp": details[1], "patientAddress": details[2], "patientName": patName }
       data.push(temp);
     }
-    console.log(data);
+    
    
 
   }
     this.setState({ data: data });
+    console.log(data);
 
     var pdata = [];
     const plen = await this.state.contract.methods.recordPDocCount().call({ from: fromAcc });
