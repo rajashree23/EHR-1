@@ -1,0 +1,158 @@
+[6175:6175:0803/085507.798616:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[6139:6139:0803/085509.011692:INFO:CONSOLE(1)] "Invalid asm.js: Unexpected token", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/bg-libs.js (1)
+[6139:6139:0803/085510.012347:INFO:CONSOLE(1)] "Setting up Sentry Remote Error Reporting for 'production': SENTRY_DSN_PROD", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/background.js (1)
+[6177:6188:0803/085510.130654:WARNING:http_cache_transaction.cc(2397)] Multiple or malformed validation headers found.
+[6139:6139:0803/085511.699679:INFO:CONSOLE(1)] "Setting up Sentry Remote Error Reporting for 'production': SENTRY_DSN_PROD", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/ui.js (1)
+[6139:6139:0803/085519.047228:INFO:CONSOLE(217675)] "[HMR] Waiting for update signal from WDS...", source: http://localhost:3000/static/js/0.chunk.js (217675)
+[6139:6139:0803/085519.130037:INFO:CONSOLE(153263)] "%cDownload the React DevTools for a better development experience: https://fb.me/react-devtools font-weight:bold", source: http://localhost:3000/static/js/0.chunk.js (153263)
+[6139:6139:0803/085519.747479:INFO:CONSOLE(4814)] "in component will mount", source: http://localhost:3000/static/js/main.chunk.js (4814)
+[6139:6139:0803/085519.751700:INFO:CONSOLE(1)] "MetaMask: The event 'data' is deprecated and may be removed in the future.", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/inpage.js (1)
+[6139:6139:0803/085519.754116:INFO:CONSOLE(1)] "MetaMask: The event 'close' is deprecated and may be removed in the future. Please use 'disconnect' instead.
+For more information, see: https://eips.ethereum.org/EIPS/eip-1193", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/inpage.js (1)
+[6139:6139:0803/085519.760517:INFO:CONSOLE(1)] "MetaMask: 'ethereum.enable()' is deprecated and may be removed in the future. Please use the 'eth_requestAccounts' RPC method instead.
+For more information, see: https://eips.ethereum.org/EIPS/eip-1102", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/inpage.js (1)
+[6139:6139:0803/085519.778227:INFO:CONSOLE(154845)] "Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    in a (at src/index.js:151)
+    in a (created by LinkAnchor)
+    in LinkAnchor (created by Context.Consumer)
+    in Link (at src/index.js:150)
+    in li (at src/index.js:149)
+    in ul (at src/index.js:148)
+    in nav (at src/index.js:141)
+    in div (at src/index.js:140)
+    in div (at src/index.js:139)
+    in application (created by Context.Consumer)
+    in Route (at src/index.js:298)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085519.780616:INFO:CONSOLE(154845)] "Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    in a (at src/index.js:156)
+    in a (created by LinkAnchor)
+    in LinkAnchor (created by Context.Consumer)
+    in Link (at src/index.js:155)
+    in li (at src/index.js:149)
+    in ul (at src/index.js:148)
+    in nav (at src/index.js:141)
+    in div (at src/index.js:140)
+    in div (at src/index.js:139)
+    in application (created by Context.Consumer)
+    in Route (at src/index.js:298)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085519.783224:INFO:CONSOLE(154845)] "Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    in a (at src/index.js:161)
+    in a (created by LinkAnchor)
+    in LinkAnchor (created by Context.Consumer)
+    in Link (at src/index.js:160)
+    in li (at src/index.js:149)
+    in ul (at src/index.js:148)
+    in nav (at src/index.js:141)
+    in div (at src/index.js:140)
+    in div (at src/index.js:139)
+    in application (created by Context.Consumer)
+    in Route (at src/index.js:298)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085519.790120:INFO:CONSOLE(128550)] "Warning: componentWillMount has been renamed, and is not recommended for use. See https://fb.me/react-unsafe-component-lifecycles for details.
+
+* Move code with side effects to componentDidMount, and set initial state in the constructor.
+* Rename componentWillMount to UNSAFE_componentWillMount to suppress this warning in non-strict mode. In React 17.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+
+Please update the following components: %s application", source: http://localhost:3000/static/js/0.chunk.js (128550)
+[6139:6139:0803/085519.939470:INFO:CONSOLE(1)] "MetaMask: MetaMask will soon stop reloading pages on network change.
+For more information, see: https://docs.metamask.io/guide/ethereum-provider.html#ethereum-autorefreshonnetworkchange 
+Set 'ethereum.autoRefreshOnNetworkChange' to 'false' to silence this warning.", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/inpage.js (1)
+[6139:6139:0803/085519.951403:INFO:CONSOLE(128318)] "./src/components/Admin.js
+  Line 16:15:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                jsx-a11y/alt-text
+  Line 21:19:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid", source: http://localhost:3000/static/js/0.chunk.js (128318)
+[6139:6139:0803/085519.951539:INFO:CONSOLE(128318)] "./src/components/revoke.js
+  Line 17:15:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                jsx-a11y/alt-text
+  Line 22:19:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid", source: http://localhost:3000/static/js/0.chunk.js (128318)
+[6139:6139:0803/085519.951638:INFO:CONSOLE(128318)] "./src/components/permit.js
+  Line 18:15:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                jsx-a11y/alt-text
+  Line 23:19:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid", source: http://localhost:3000/static/js/0.chunk.js (128318)
+[6139:6139:0803/085519.951737:INFO:CONSOLE(128318)] "./src/components/addReception.js
+  Line 22:15:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                jsx-a11y/alt-text
+  Line 27:19:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid", source: http://localhost:3000/static/js/0.chunk.js (128318)
+[6139:6139:0803/085519.962151:INFO:CONSOLE(128318)] "./src/components/addPatient.js
+  Line 22:15:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                jsx-a11y/alt-text
+  Line 27:19:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid", source: http://localhost:3000/static/js/0.chunk.js (128318)
+[6139:6139:0803/085519.962274:INFO:CONSOLE(128314)] "There were more warnings in other files.
+You can find a complete log in the terminal.", source: http://localhost:3000/static/js/0.chunk.js (128314)
+[6139:6139:0803/085519.969973:INFO:CONSOLE(4829)] "inweb3", source: http://localhost:3000/static/js/main.chunk.js (4829)
+[6139:6139:0803/085525.747206:INFO:CONSOLE(154845)] "Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    in a (at loginPatient.js:168)
+    in a (created by LinkAnchor)
+    in LinkAnchor (created by Context.Consumer)
+    in Link (at loginPatient.js:167)
+    in li (at loginPatient.js:166)
+    in ul (at loginPatient.js:165)
+    in nav (at loginPatient.js:158)
+    in div (at loginPatient.js:157)
+    in loginPatient (created by Context.Consumer)
+    in Route (at src/index.js:301)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085525.761649:INFO:CONSOLE(154845)] "Warning: Invalid DOM property `%s`. Did you mean `%s`?%s class className 
+    in thead (at loginPatient.js:179)
+    in table (at loginPatient.js:178)
+    in div (at loginPatient.js:175)
+    in div (at loginPatient.js:157)
+    in loginPatient (created by Context.Consumer)
+    in Route (at src/index.js:301)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085525.761832:INFO:CONSOLE(128550)] "Warning: componentWillMount has been renamed, and is not recommended for use. See https://fb.me/react-unsafe-component-lifecycles for details.
+
+* Move code with side effects to componentDidMount, and set initial state in the constructor.
+* Rename componentWillMount to UNSAFE_componentWillMount to suppress this warning in non-strict mode. In React 17.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+
+Please update the following components: %s loginPatient", source: http://localhost:3000/static/js/0.chunk.js (128550)
+[6139:6139:0803/085526.329238:INFO:CONSOLE(3251)] "1", source: http://localhost:3000/static/js/main.chunk.js (3251)
+[6139:6139:0803/085526.873997:INFO:CONSOLE(3261)] "[object Object]", source: http://localhost:3000/static/js/main.chunk.js (3261)
+[6139:6139:0803/085527.431863:INFO:CONSOLE(3272)] "Subham", source: http://localhost:3000/static/js/main.chunk.js (3272)
+[6139:6139:0803/085527.441919:INFO:CONSOLE(154845)] "Warning: Each child in a list should have a unique "key" prop.%s%s See https://fb.me/react-warning-keys for more information.%s 
+
+Check the render method of `loginPatient`.  
+    in tr (at loginPatient.js:120)
+    in loginPatient (created by Context.Consumer)
+    in Route (at src/index.js:298)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085527.461092:INFO:CONSOLE(3288)] "[object Object]", source: http://localhost:3000/static/js/main.chunk.js (3288)
+[6139:6139:0803/085529.310799:INFO:CONSOLE(4254)] "QmY2EjRCLYFsm4Yeq88KbSqTv4xLSUMQHYCKNdpUSUzgvQ", source: http://localhost:3000/static/js/main.chunk.js (4254)
+[6139:6139:0803/085529.310970:INFO:CONSOLE(154845)] "Warning: validateDOMNesting(...): %s cannot appear as a descendant of <%s>.%s <a> a 
+    in a (at permit.js:23)
+    in a (created by LinkAnchor)
+    in LinkAnchor (created by Context.Consumer)
+    in Link (at permit.js:22)
+    in li (at permit.js:21)
+    in ul (at permit.js:20)
+    in nav (at permit.js:13)
+    in div (at permit.js:12)
+    in permit (created by Context.Consumer)
+    in Route (at src/index.js:303)
+    in Switch (at src/index.js:297)
+    in Router (created by BrowserRouter)
+    in BrowserRouter (at src/index.js:296)", source: http://localhost:3000/static/js/0.chunk.js (154845)
+[6139:6139:0803/085529.314378:INFO:CONSOLE(128550)] "Warning: componentWillMount has been renamed, and is not recommended for use. See https://fb.me/react-unsafe-component-lifecycles for details.
+
+* Move code with side effects to componentDidMount, and set initial state in the constructor.
+* Rename componentWillMount to UNSAFE_componentWillMount to suppress this warning in non-strict mode. In React 17.x, only the UNSAFE_ name will work. To rename all deprecated lifecycles to their new names, you can run `npx react-codemod rename-unsafe-lifecycles` in your project source folder.
+
+Please update the following components: %s Employee", source: http://localhost:3000/static/js/0.chunk.js (128550)
+[6139:6139:0803/085537.973011:INFO:CONSOLE(1)] "Setting up Sentry Remote Error Reporting for 'production': SENTRY_DSN_PROD", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/ui.js (1)
+[6139:6139:0803/085538.445581:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/fonts/Roboto/Roboto-Regular.ttf", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/notification.html#confirm-transaction/7128747995447915/token-method (0)
+[6139:6139:0803/085538.445858:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/fonts/Roboto/Roboto-Medium.ttf", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/notification.html#confirm-transaction/7128747995447915/token-method (0)
+[6139:6139:0803/085540.107057:INFO:CONSOLE(1)] "Setting up Sentry Remote Error Reporting for 'production': SENTRY_DSN_PROD", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/ui.js (1)
+[6139:6139:0803/085540.513622:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/fonts/Roboto/Roboto-Regular.ttf", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/popup.html#confirm-transaction/7128747995447915/token-method (0)
+[6139:6139:0803/085540.514321:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/fonts/Roboto/Roboto-Medium.ttf", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/popup.html#confirm-transaction/7128747995447915/token-method (0)
+[6139:6139:0803/085543.736109:INFO:CONSOLE(0)] "Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/fonts/Roboto/Roboto-Bold.ttf", source: chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/popup.html# (0)
+[6175:6175:0803/085543.799283:WARNING:x11_util.cc(1520)] X error received: serial 8085, error_code 170 (GLXBadWindow), request_code 152, minor_code 32 (X_GLXDestroyWindow)
+[6175:6175:0803/085543.799485:WARNING:x11_util.cc(1520)] X error received: serial 8089, error_code 3 (BadWindow (invalid Window parameter)), request_code 4, minor_code 0 (X_DestroyWindow)
