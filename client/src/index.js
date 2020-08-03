@@ -162,11 +162,13 @@ class application extends React.Component {
                     CONTACT
                   </a>
                 </Link>
-                
+                </li>
+              <li className="nav-item">
                 <a className="nav-link" style={{ color: "white" }} href='http://localhost:5000/hss'>
                     DEMO 
                   </a>
-              </li>
+                  </li>
+              
             </ul>
           </nav>
           <div className='Header'>
