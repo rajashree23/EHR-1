@@ -13,27 +13,27 @@
 
 
 ### Problem Statement
-<br/>
+
 EHR generally contain highly-sensitive and critical data related to patients, which is frequently shared among clinicians, radiologists, healthcare providers, pharmacists, and researchers, for effective diagnosis and treatment. Hence may use blockchain technology for accessing and managing the privacy and security of patient data and history in clinical practices.
 
 ### Solution
-<br/>
+
 A blockchain based decentralised web application which will provide privacy and security to the patients’ health record using AES encryption ,Access Control and IPFS. The system gives appropriate scope over a health record only on patient’s permission.
 
 ### Website Glimpses
 
 
 ### Components 
-<br/>
-Built a blockchain-based decentralized web app<br/>
-- Provides privacy
-- Cost reduction compared to current EHR models
-- No third-party involvement
+
+Built a blockchain-based decentralized web app <br/>
+- Provides privacy <br/>
+- Cost reduction compared to current EHR models <br/>
+- No third-party involvement <br/>
 
 Our application secures the initial stage of registration <br/>
 - Access Control using Open Zeppelin to maintain hierarchy similar to current system.
 - Private network
-- - Track of records 
+- Track of records 
 
 We have an one-click login <br/>
 - Metamask Wallet
@@ -83,8 +83,9 @@ Our third stage of security<br/>
 
 ### Encryption Decryption Flow
 
-![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
-![image](https://drive.google.com/uc?export=view&id=1cy-VCjGc8UnNhYKdadeBMj5Fq52cWlAr)
+![ehr1](https://user-images.githubusercontent.com/33730790/145253215-3523348c-47f8-4a75-88d1-a11ba7c0b6be.png)
+
+
 
 
 ### Installation
