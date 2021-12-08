@@ -1,16 +1,30 @@
-# SS45_ACCESS_DENIED
+# EHR- Electronic Health Record
 
 
-**Problem statement**<br/>
+## Contents
+- [Problem Statement](Problem-Statement)
+- [Solution](Solution)
+- [Website Glimpses](Website-Glimpses)
+- [Components](Components)
+- [Use Case](Use-Case)
+- [Tech Stack](url)
+- [Encryption Decryption Flow](Encryption-Decryption-Flow)
+- [Installation](Installation)
+
+
+### Problem Statement
+<br/>
 EHR generally contain highly-sensitive and critical data related to patients, which is frequently shared among clinicians, radiologists, healthcare providers, pharmacists, and researchers, for effective diagnosis and treatment. Hence may use blockchain technology for accessing and managing the privacy and security of patient data and history in clinical practices.
 
-**Solution**<br/>
+### Solution
+<br/>
 A blockchain based decentralised web application which will provide privacy and security to the patients’ health record using AES encryption ,Access Control and IPFS. The system gives appropriate scope over a health record only on patient’s permission.
 
-**Website Glimpses**
+### Website Glimpses
 
 
-**Components**<br/>
+### Components 
+<br/>
 Built a blockchain-based decentralized web app<br/>
 - Provides privacy
 - Cost reduction compared to current EHR models
@@ -44,7 +58,7 @@ Our third stage of security<br/>
 - Encrypted AES key (decrypted only by unique private key)  stored on blockchain
 
 
-**Use Case**<br/>
+### Use Case <br/>
 - The public key is the identification of every user in the network.
 - Registered by Admin
 - One-click login using Metamask
@@ -54,7 +68,7 @@ Our third stage of security<br/>
 - Report can only be viewed in the web app itself if patient gives permission.
 - Patient can revoke permission at any time.
 
-**Tech Satck**
+### Tech Satck
 - ReactJS
 - Bootstrap
 - Web3js
@@ -67,12 +81,13 @@ Our third stage of security<br/>
 - Metamask Wallet
 
 
-**Encryption Decryption Flow**<br/>
+### Encryption Decryption Flow
+
 ![image](https://drive.google.com/uc?export=view&id=1913oZeBZPBNiUuk8gu3ZSbLBA2l_VQtG)
 ![image](https://drive.google.com/uc?export=view&id=1cy-VCjGc8UnNhYKdadeBMj5Fq52cWlAr)
 
 
-**Installation**
+### Installation
 
 - Clone the repo
 - Run **npm install**
