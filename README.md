@@ -1,5 +1,6 @@
 # EHR- Electronic Health Record
 
+The app is hosted at :point_right:
 
 ## Contents
 - [Problem Statement](Problem-Statement)
@@ -21,6 +22,7 @@ EHR generally contain highly-sensitive and critical data related to patients, wh
 A blockchain based decentralised web application which will provide privacy and security to the patients’ health record using AES encryption ,Access Control and IPFS. The system gives appropriate scope over a health record only on patient’s permission.
 
 ### Website Glimpses
+![SS_1](https://user-images.githubusercontent.com/33730790/145254193-96841d59-2266-43e7-8c59-7e4eada3430d.png)
 
 
 ### Components 
