@@ -1,10 +1,14 @@
 # SS45_ACCESS_DENIED
 
+
 **Problem statement**<br/>
 EHR generally contain highly-sensitive and critical data related to patients, which is frequently shared among clinicians, radiologists, healthcare providers, pharmacists, and researchers, for effective diagnosis and treatment. Hence may use blockchain technology for accessing and managing the privacy and security of patient data and history in clinical practices.
 
 **Solution**<br/>
-A blockchain based decentralised web application which will provide privacy and security to the patients’ health record using AES encryption ,Access Control and IPFS. The system gives appropriate scope over a health record only on patient’s permission. 
+A blockchain based decentralised web application which will provide privacy and security to the patients’ health record using AES encryption ,Access Control and IPFS. The system gives appropriate scope over a health record only on patient’s permission.
+
+**Website Glimpses**
+
 
 **Components**<br/>
 Built a blockchain-based decentralized web app<br/>
@@ -64,6 +68,17 @@ Our third stage of security<br/>
 
 
 **Encryption Decryption Flow**
+![image](https://drive.google.com/uc?export=view&id=/1cy-VCjGc8UnNhYKdadeBMj5Fq52cWlAr)
+
+
+**Installation**
+
+- Clone the repo
+- Run **npm install**
+- Run **npm start** to start the server
+- Open http://localhost:3000/ in browser
+- Set metamask to **Ropsten Testnet**
+
 
 
 
