@@ -25,6 +25,14 @@ A blockchain based decentralised web application which will provide privacy and 
 ![SS_1](https://user-images.githubusercontent.com/33730790/145254193-96841d59-2266-43e7-8c59-7e4eada3430d.png)
 
 
+![Screenshot (266)](https://user-images.githubusercontent.com/33730790/145564104-4be338dd-84c0-4c5e-aa6b-386a86023411.png)
+
+![Screenshot (265)](https://user-images.githubusercontent.com/33730790/145564118-891cd563-04ef-4ba7-8c90-770cc2565a64.png)
+
+![Screenshot (264)](https://user-images.githubusercontent.com/33730790/145564134-17fedcc3-72d2-4637-9cb1-872184c7538d.png)
+
+
+
 ### Components 
 
 Built a blockchain-based decentralized web app <br/>
@@ -70,7 +78,7 @@ Our third stage of security<br/>
 - Report can only be viewed in the web app itself if patient gives permission.
 - Patient can revoke permission at any time.
 
-### Tech Satck
+### Tech Stack
 - ReactJS
 - Bootstrap
 - Web3js
