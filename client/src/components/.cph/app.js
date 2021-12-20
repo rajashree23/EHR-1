@@ -37,7 +37,7 @@ class Employee extends Component {
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
 
-    const contract = new web3.eth.Contract(Healthcare, "0x0baa16ddde410d64069ffb772898ee2e3ccffa64");
+    const contract = new web3.eth.Contract(Healthcare, "0xE847595d5Ce0675ef88Bc6d961E07b9E27A259FD");
     this.setState({ contract })
 
 
