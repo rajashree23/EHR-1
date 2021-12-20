@@ -1,6 +1,6 @@
 # EHR- Electronic Health Record
 
-The app is hosted at :point_right:
+The app is hosted at :point_right:https://ehr-app-f70e6.web.app/
 
 ## Contents
 - [Problem Statement](Problem-Statement)
