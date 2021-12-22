@@ -15,7 +15,7 @@ The app is hosted at :point_right:https://ehr-app-f70e6.web.app/
 
 ### Problem Statement
 
-EHR generally contain highly-sensitive and critical data related to patients, which is frequently shared among clinicians, radiologists, healthcare providers, pharmacists, and researchers, for effective diagnosis and treatment. Hence may use blockchain technology for accessing and managing the privacy and security of patient data and history in clinical practices.
+EHR generally contain highly-sensitive and critical data related to patients, which is frequently shared among clinicians, radiologists, healthcare providers, pharmacists, and researchers, for effective diagnosis and treatment. Hence, we may use blockchain technology for accessing and managing the privacy and security of patient data and history in clinical practices.
 
 ### Solution
 
